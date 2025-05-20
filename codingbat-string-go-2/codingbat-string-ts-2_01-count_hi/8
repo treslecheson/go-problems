@@ -1,0 +1,17 @@
+package codingbatstringts201counthi
+
+import "strings"
+
+func countHi(text string) int {
+	count := 0
+	leng := len(text)
+	for i := 0; i <= leng; i++ {
+		if strings.Contains("hi", strings.ToLower(text)) {
+			count++
+			text = strings.Replace(text, "hi", "", 1)
+		} else {
+			break
+		}
+	}
+	return count
+}

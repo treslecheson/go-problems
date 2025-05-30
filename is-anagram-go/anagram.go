@@ -21,4 +21,5 @@ func main() {
 	println(isAnagram("Sled", "LEDs"))
 	println(isAnagram("read", "dear"))
 	println(isAnagram("deer", "deere"))
+	println(isAnagram("read", "dear"))
 }

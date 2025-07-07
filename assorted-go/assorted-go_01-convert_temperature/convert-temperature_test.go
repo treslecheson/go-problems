@@ -12,6 +12,7 @@ const farenheit3 float32 = 93.2
 const celcius3 float32 = 34
 
 func TestTofarenheit(t *testing.T) {
+
 	assertEqual := func(t testing.TB, farenheit, celcius float32) {
 		got := toFarenheit(celcius)
 		wanted := farenheit

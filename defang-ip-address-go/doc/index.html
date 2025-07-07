@@ -1,0 +1,25 @@
+<html>
+  <head></head>
+  <body>
+    <h1>Defang an IP Address</h1>
+
+    <p>
+      Write a function called <code>convertAddress</code> that takes in an IP
+      address as a string and validates and returns a defanged IP address also
+      as a string. If it isn&#39;t a valid address, then return an empty string.
+    </p>
+
+    <p>
+      A defanged IP address is formatted to separate the parts of an address so
+      that software doesn&#39;t convert it into a link, such as in
+      documentation. The method to use in this problem is to replace all
+      <code>.</code> with <code>[.]</code>. A valid IP address is one where
+      every octet (the 3 digits between each period) is within 0 - 255,
+      inclusive.
+    </p>
+
+    <pre><code class="language-go">convertAddress(&#34;192.168.1.9&#34;) // -&gt; &#34;192[.]168[.]1[.]9&#34;
+convertAddress(&#34;172.3.265.42&#34;) // -&gt; &#34;&#34;
+</code></pre>
+  </body>
+</html>
